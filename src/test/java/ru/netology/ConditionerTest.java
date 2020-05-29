@@ -16,6 +16,7 @@ class ConditionerTest {
         int expected = 21;
         assertEquals(expected, actual);
     }
+
     @Test
     void increaseCurrentTemperature2() {
         Conditioner conditioner = new Conditioner();
@@ -37,6 +38,7 @@ class ConditionerTest {
         int expected = 19;
         assertEquals(expected, actual);
     }
+
     @Test
     void decreaseCurrentTemperature2() {
         Conditioner conditioner = new Conditioner();
