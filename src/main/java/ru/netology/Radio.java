@@ -11,15 +11,17 @@ public class Radio {
     public void nextStation (){
         if (currentStation == maxStation){
             currentStation = minStation;
+            return;
         }
-        else
+
         currentStation++;
     }
     public void previousStation (){
         if (currentStation == minStation){
             currentStation = maxStation;
+            return;
         }
-        else
+
         currentStation--;
     }
     public void volumeUp (){
