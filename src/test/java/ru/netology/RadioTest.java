@@ -7,20 +7,18 @@ import static org.junit.jupiter.api.Assertions.*;
 class RadioTest {
 
 
-
-
     @Test
     void nextStation() {
-        Radio radioV2 = new Radio(120,65);
+        Radio radioV2 = new Radio(120, 65);
 
         radioV2.nextStation();
 
-        assertEquals(66,  radioV2.getCurrentStation());
+        assertEquals(66, radioV2.getCurrentStation());
     }
 
     @Test
     void nextStation2() {
-        Radio radioV2 = new Radio(120,120);
+        Radio radioV2 = new Radio(120, 120);
 
         radioV2.nextStation();
 
@@ -29,7 +27,7 @@ class RadioTest {
 
     @Test
     void previousStation() {
-        Radio radioV2 = new Radio(120,65);
+        Radio radioV2 = new Radio(120, 65);
 
         radioV2.previousStation();
 
@@ -38,7 +36,7 @@ class RadioTest {
 
     @Test
     void previousStation2() {
-        Radio radioV2 = new Radio(120,0);
+        Radio radioV2 = new Radio(120, 0);
 
         radioV2.previousStation();
 
