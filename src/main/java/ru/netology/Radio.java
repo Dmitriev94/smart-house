@@ -1,12 +1,27 @@
 package ru.netology;
 
 public class Radio {
-    private int maxStation = 9;
+    private int maxStation = 10;
     private int minStation = 0;
-    private int currentStation = 5;
-    private int maxVolume = 10;
+    private int currentStation = 1;
+    private int maxVolume = 100;
     private int minVolume = 0;
-    private int currentVolume = 4;
+    private int currentVolume = 30;
+
+    public Radio() {
+    }
+
+    public Radio(int currentVolume) {
+        this.currentVolume = currentVolume;
+    }
+
+    public Radio(int maxStation, int currentStation) {
+        this.maxStation = maxStation;
+        this.currentStation = currentStation;
+    }
+
+
+
 
     public void nextStation() {
         if (currentStation == maxStation) {
