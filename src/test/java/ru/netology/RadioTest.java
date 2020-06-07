@@ -82,6 +82,57 @@ class RadioTest {
 
         assertEquals(0, radioV2.getCurrentVolume());
     }
+    @Test
+    void setCurrentStation() {
+        Radio radioV2 = new Radio();
+
+        radioV2.setCurrentStation(11);
+
+        assertEquals(1, radioV2.getCurrentStation());
+    }
+
+    @Test
+    void setCurrentStation2() {
+        Radio radioV2 = new Radio();
+
+        radioV2.setCurrentStation(-1);
+
+        assertEquals(1, radioV2.getCurrentStation());
+    }
+    @Test
+    void setCurrentStation3() {
+        Radio radioV2 = new Radio();
+
+        radioV2.setCurrentStation(7);
+
+        assertEquals(7, radioV2.getCurrentStation());
+    }
+
+    @Test
+    void setCurrentVolume() {
+        Radio radioV2 = new Radio();
+
+        radioV2.setCurrentVolume(101);
+
+        assertEquals(30, radioV2.getCurrentVolume());
+    }
+
+    @Test
+    void setCurrentVolume2() {
+        Radio radioV2 = new Radio();
+
+        radioV2.setCurrentVolume(-1);
+
+        assertEquals(30, radioV2.getCurrentVolume());
+    }
+    @Test
+    void setCurrentVolume3() {
+        Radio radioV2 = new Radio();
+
+        radioV2.setCurrentVolume(50);
+
+        assertEquals(50, radioV2.getCurrentVolume());
+    }
 
 
 }
